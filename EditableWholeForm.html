@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Declaration Form</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="EditableWhole.css"> 
+        <link rel="icon" href="images/sunlife-tab.png">
+    </head>
+
+    <body>
+        <!--HEADER PART-->
+        <div class="header-container">
+            <img class="yellow-line" src="images/yellow line.png">
+            <img class="logo" src="images/sunlife logo.png">
+        </div>
+
+        <!--MAIN PART-->
+        <div class="main-container">
+
+            <!--SIDEBAR PART-->
+            <div class="side-bar"> 
+                <a href="" class="button-link"> ◄ BACK</a>
+            </div>
+
+            <!--MAIN FILLUP FORM-->
+            <div class="right-container">
+                <div class="bluerectangle" style="position:absolute; left:288px; top:150px;"></div>
+                <div class="bluerectangle" style="position:absolute; left:288px; top:475px; width: 400px;"></div>
+                <div class="bluerectangle" style="position:absolute; left:288px; top:2730px; width: 800px;"></div>
+
+                <!--TITLE FORM-->
+                <p class="title">DECLARATION FORM</p>
+
+                <div class="edit">
+                    <button class="button1" onclick="enableEditMode()"> Edit </button>
+                </div>
+
+                <div class="Save">
+                    <button class="button2" onclick="saveChanges()" disabled> Save </button>
+                </div>
+
+        
+
+                <!--FILL-UP PART-->
+                    <!--POLICY OWNER INFO-->
+                <p class="sub-title" style="position: relative; top: 15px;">1. POLICY OWNER INFORMATION</p>
+                
+
+                <div class="fill-up-container">
+                    <!-- Grouping each textbox by row -->
+                    <fieldset class="row1">
+                        <div class="form-group">
+                            <label class="category-title" for="policy_owner_name">Policy Owner's Name</label>
+                            <input class="policy_owner_name_box" id="policy_owner_name" name="policy_owner_name" type="text" required />
+                        </div>
+                
+                        <!--Checkbox-->
+                        <div class="purposecheckbox">
+                            <div class="purposecheckbox">
+                                <label class="purpose">Purpose</label>
+                                <div class="checkbox-row">
+                                    <input class="cbox1" type="checkbox" id="reinstatement" name="purpose" value="Reinstatement"  checked> Reinstatement
+                                    <input class="cbox2" type="checkbox" id="delivery" name="purpose" value="Delivery" > Delivery
+                                    <input class="cbox3" type="checkbox" id="change" name="purpose" value="Change" > Change
+                                </div>
+                            </div>                            
+                    </fieldset>
+
+                    <fieldset class="row2">
+                        <div class="form-group">
+                            <label class="category-title" for="policy_owner">Policy Number </label>
+                            <input class="policy_owner_box" id="policy_owner" name="policy_owner" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="on_the_life_of">on the Life of </label>
+                            <input class="on_the_life_of_box" id="on_the_life_of" name="on_the_life_of" type="text" required />
+                        </div>
+                    </fieldset>
+                    
+                    <!--GENERAL INFO-->
+                    <fieldset class="row3">
+                    <p class="sub-title" style="position: relative; top: 3px; left: -10px;">2. GENERAL INFORMATION</p>
+                    </fieldset>
+
+                    <fieldset class="row3">
+                        <div>
+                        <p class="sub-title" style="position: relative; left: -10px; color: rgba(0, 57, 85);">2.1 RELATING TO THE LIFE INSURED / POLICY OWNER</p>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="row4">
+                        <div class="form-group">
+                            <label class="category-title" for="policy_owner_name">Full Name <small class="smallname">(First Name, Middle Initial, Last Name)</small> </label>
+                            <input class="policy_owner_name_box" id="policy_owner_name1" name="policy_owner_name" type="text" required />
+                        </div>
+
+                        <!--Religion textfield-->
+                        <div class="religion-group">
+                            <label class="category-title" for="religion">Religion </label>
+                            <input class="religion_box" id="religion" name="religion" type="text" required />
+                        </div>
+                
+                        <!--Checkbox of sex-->
+                        <div class="sexcheckbox">
+                            <label class="sex">Sex</label>
+                            <div class="checkbox-row">
+                                <input class="cbox4" type="checkbox" id="maleCheckbox" name="malesex" value="sex"  checked> Male
+                                <input class="cbox5" type="checkbox" id="femaleCheckbox" name="femalesex" value="sex" > Female
+                            </div>
+                        </div>
+                    </fieldset>
+                  
+                    <!--for birthdate, age, birthplace-->
+                    <fieldset class="row5">
+                        <div class="form-group">
+                            <label class="category-title" for="birthdate">Birthdate </label>
+                            <input class="birthdate" id="birthdate" name="birthdate" type="date" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="age">Age </label>
+                            <input class="age" id="age" name="age" type="number" min="16" max="120" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="category-title" for="birthplace">Birthplace </label>
+                            <input class="birthplace" id="birthplace" name="birthplace" type="text" required />
+                        </div>  
+                    </fieldset>
+
+                    <!--for citizenship, country of legal-->
+                    <fieldset class="row6">
+                        <div class="form-group">
+                            <label class="category-title" for="citizenship">Citizenship </label>
+                            <input class="citizenship" id="citizenship" name="citizenship" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="country">Country of Legal Residence other than Philippines</label>
+                            <input class="country" id="country" name="country" type="text" required />
+                        </div>
+                    </fieldset>
+
+                    <!--for id presented, id number, id expiry-->
+                    <fieldset class="row7">
+                        <div class="form-group">
+                            <label class="category-title" for="idpresented">ID Presented</label>
+                            <input class="idpresented" id="idpresented" name="idpresented" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="idnumber">ID Number</label>
+                            <input class="idnumber" id="idnumber" name="idnumber" type="text" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="category-title" for="expiry">ID Expiry Date</label>
+                            <input class="idexp" id="idexp" name="idexp" type="date" required />
+                        </div> 
+                    </fieldset>
+
+                    <!--for tin, sss, explanation-->
+                    <fieldset class="row8">
+                        <div class="form-group">
+                            <label class="category-title" for="tin">TIN</label>
+                            <input class="tin" id="tin" name="tin" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="SSS">SSS No. or GSIS No.</label>
+                            <input class="SSS" id="SSS" name="SSS" type="text" required />
+                        </div>
+                    </fieldset>
+
+                    <!--for explain if no tin -->
+                    <fieldset class="row9">
+                        <div class="form-group">
+                            <label class="category-title" for="explain">Explain if there is no TIN, SSS or GSIS No.</label>
+                            <input class="explain" id="explain" name="explain" type="text" required /> 
+                        </div>                    
+                    </fieldset>
+
+                    <!--for permanent address-->
+                    <fieldset class="row10">
+                        <div class="form-group">
+                            <label class="category-title" for="permanent">Permanent Residence Address <small class="smallname"> (no., street, municipality/city, province, country, zip code)</small></label>
+                            <input class="permanent" id="permanent1" name="permanent" type="text" required /> 
+                        </div>                    
+                    </fieldset>
+
+                    <!--for present address-->
+                    <fieldset class="row11">
+                        <div class="form-group">
+                            <label class="category-title" for="present">Present Residence Address <small class="smallname"> (no., street, municipality/city, province, country, zip code)</small></label>
+                            <input class="present " id="present1" name="present" type="text" required /> 
+                            
+                            <field> 
+                            <div class="present-row">
+                                <input class="presentcbox" type="checkbox" id="same1" name="same" value="same">  same with Permanent Address 
+                        </div>    
+                    </field>      
+                    </fieldset> 
+
+                    <!--for business address-->
+                    <fieldset class="row12">
+                    <div class="form-group">
+                        <label class="category-title" for="permanent">Business Address <small class="smallname"> (building, street, municipality/city, province, country, zip code)</small></label>
+                        <input class="business" id="business" name="business" type="text" required /> 
+                    </div>
+                    </fieldset>
+
+                    <!--for homephone, workphone, mobilephone-->
+                    <fieldset class="row13">
+                        <div class="form-group">
+                            <label class="category-title" for="homephone">Home Phone</label>
+                            <input class="homephone" id="homephone" name="homephone" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="workphone">Work Phone</label>
+                            <input class="workphone" id="workphone" name="workphone" type="text" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="category-title" for="mobilephone">Mobile Phone</label>
+                            <input class="mobilephone" id="mobilephone" name="mobilephone" type="text" required />
+                        </div> 
+                    </fieldset>
+
+                    <!--for email address-->
+                    <fieldset class="row14">
+                        <div class="form-group">
+                            <label class="category-title" for="email">Email Address</label>
+                            <input class="email" id="email" name="email" type="text" required /> 
+                        </div>                    
+                    </fieldset>
+                                
+                    <!--for if there add-->
+                    <fieldset class="row15">
+                        <div class="form-group">
+                            <label class="category-title" for="ifres">If residence address is outside the Philippines since when? </label>
+                            <input class="sincewhen" id="ifres" name="ifres" type="text" required />
+                        </div>
+
+                        <!--checkbox of intention to reside-->
+                        <div class="intentioncheckbox">
+                            <label class="intentionto">Intention to reside outside the Philippines?</label>
+                            
+                            <div class="intentioncheckbox-row">
+                                <input class="intentioncbox1" type="checkbox" id="intentionyes" name="intentionyes" value="yes">  Yes
+                                <input class="intentioncbox2" type="checkbox" id="intentionno" name="intentionno" value="no" checked> No
+                
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!--for occupation and have you checkbox -->
+                    <fieldset class="row16">
+                        <div class="form-group">
+                            <label class="category-title" for="sincewhen">Occupation <small class="smallname">(please indicate spesific job)</small> </label>
+                            <input class="sincewhen" id="sincewhen" name="sincewhen" type="text" required />
+                        </div>
+
+                        <div class="havecheckbox">
+                            <label class="haveyou">Have you changed your occupation since the date of application for the policy?</label>
+                            
+                            <div class="havecheckbox-row">
+                                <input class="havecbox1" type="checkbox" id="haveyouyes" name="haveno" value="haveno">  Yes
+                                <input class="havecbox2" type="checkbox" id="haveyouno" name="haveyes" value="haveyes" checked> No
+                
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!--for if yes-->
+                    <fieldset class="row17">
+                        <div class="ifyesbox">
+                            <label class="category-title" for="ifyes">If yes, since when?</label>
+                            <input class="ifyes" id= "ifyes" name="ifyes" type="date" required />
+                        </div> 
+                    </fieldset>
+
+                    <!--SECTION 2.2-->
+                    <fieldset class="row18">
+                        <div>
+                        <p class="sub-title" style="position: relative; left: -10px; color: rgba(0, 57, 85);">2.2 RELATING TO BUSINESS POLICY OWNER</p>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="row19">
+                        <div class="form-group">
+                            <label class="category-title" for="business_name">Company / Business Name </label>
+                            <input class="business_name_box" id="business_name" name="business_name" type="text" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="category-title" for="relationship_life_insured">Relationship to the life insured<small class="smallname"> (e.g., Employer) </small> </label>
+                            <input class="relationship_life_insured_box" id="relationship_life_insured" name="relationship_life_insured" type="text" required />
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="row20">
+                        <div class="form-group">
+                            <label class="category-title" for="business_reg">Country of Incorporation or Business Registration </label>
+                            <input class="business_reg_box" id="business_reg" name="business_reg" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="business_type">Type of Business </label>
+                            <input class="business_type_box" id="business_type" name="business_type" type="text" required />
+                        </div>
+                    </fieldset>
+                    
+
+                    <fieldset class="row21">
+                        <div class="form-group">
+                            <label class="category-title" for="business_TIN">TIN </label>
+                            <input class="business_TIN_box" id="business_TIN" name="business_TIN" type="text" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="contact_person">Contact Person </label>
+                            <input class="contact_person_box" id="contact_person" name="contact_person" type="text" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="designation">Designation </label>
+                            <input class="designation_box" id="designation" name="designation" type="text" required />
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="row22">
+                        <div class="form-group">
+                            <label class="category-title" for="business_address">Business Address <small class="smallname"> (no., street, municipality/city, province, country, zip code)</small> </label>
+                            <input class="business_address_box" id="business_address" name="business_address" type="text" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="business_phone">Business Phone </label>
+                            <input class="business_phone_box" id="business_phone" name="business_phone" type="text" required />
+                        </div> 
+                    </fieldset>
+                
+
+                <!--3. MEDICAL QUESTION ON THE LIFE INSURED / POLICY OWNER -->
+                    <fieldset class="row23">
+                        <p class="sub-title" style="position: relative; top: 3px; left: -10px;">3. MEDICAL QUESTION ON THE LIFE INSURED / POLICY OWNER</p>
+                    </fieldset>
+
+
+                    <fieldset class="row">
+                            <label class="question" for="Medical_Y_N">In the last 12 months, have you smoked or used cigarettes, cigarillos, cigars, pipes, betelnut, chewing tobacco, nicotine gum or patches, or nicotine or tobacco in any other form? </label>
+                    </fieldset>
+
+
+                    <fieldset class="row24">
+                        <div class="form-group1">
+                            <input class="Medical_Y_N_box" id="Medical_Y" name="Medical_Y_N" type="checkbox" checked > YES 
+                            <input class="Medical_Y_N_box" id="Medical_N" name="Medical_Y_N" type="checkbox" > NO
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="row25">
+                        <button class="add">+</button>
+
+                        <div class="sub-group">
+                            <div class="prod">
+                                <label class="sub-category-title" for="product">PRODUCT </label>
+                            </div>
+                            <div class="quan">
+                                <label class="sub-category-title" for="quantity_per_day">QUANTITY PER DAY </label>
+                            </div>
+                            <div class="freq">
+                                <label class="sub-category-title" for="frequency_use">FREQUENCY OF USE </label>
+                            </div>
+                            <div class="date">
+                                <label class="sub-category-title" for="date_last_used">DATE LAST USED </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="row26">
+                        <button class="minus">-</button>
+                        <input class="product_box" id="product" name="product" type="text" required />
+                        <input class="quantity_per_day_box" id="quantity_per_day" name="quantity_per_day" type="text" required />
+                        <select class="frequency_use_box" id="frequency_use" name="frequency_use">
+                            <option value=""></option>
+                                <option value="1">Seldom</option>
+                                <option value="2">Sometimes</option>
+                                <option value="3">Often</option>
+                                <option value="4">Always</option>
+                        </select>
+                        <input class="date_last_used_box" id="date_last_used" name="date_last_used" type="date" required />
+                    </fieldset>
+
+                    <fieldset class="row27">
+                        <button class="minus">-</button>
+                        <input class="product_box" id="product" name="product" type="text" required />
+                        <input class="quantity_per_day_box" id="quantity_per_day" name="quantity_per_day" type="text" required />
+                        <select class="frequency_use_box" id="frequency_use" name="frequency_use">
+                            <option value=""></option>
+                                <option value="1">Seldom</option>
+                                <option value="2">Sometimes</option>
+                                <option value="3">Often</option>
+                                <option value="4">Always</option>
+                        </select>
+                        <input class="date_last_used_box" id="date_last_used" name="date_last_used" type="date" required />
+                    </fieldset>
+
+                    <fieldset class="row28">
+                        <button class="minus">-</button>
+                        <input class="product_box" id="product" name="product" type="text" required />
+                        <input class="quantity_per_day_box" id="quantity_per_day" name="quantity_per_day" type="text" required />
+                        <select class="frequency_use_box" id="frequency_use" name="frequency_use">
+                            <option value=""></option>
+                                <option value="1">Seldom</option>
+                                <option value="2">Sometimes</option>
+                                <option value="3">Often</option>
+                                <option value="4">Always</option>
+                        </select>
+                        <input class="date_last_used_box" id="date_last_used" name="date_last_used" type="date" required />
+                    </fieldset>
+
+                    <fieldset class="row29">
+                        <button class="minus">-</button>
+                        <input class="product_box" id="product" name="product" type="text" required />
+                        <input class="quantity_per_day_box" id="quantity_per_day" name="quantity_per_day" type="text" required />
+                        <select class="frequency_use_box" id="frequency_use" name="frequency_use">
+                            <option value=""></option>
+                                <option value="1">Seldom</option>
+                                <option value="2">Sometimes</option>
+                                <option value="3">Often</option>
+                                <option value="4">Always</option>
+                        </select>
+                        <input class="date_last_used_box" id="date_last_used" name="date_last_used" type="date" required />
+                    </fieldset>
+
+                    <fieldset class="row30">
+                        <button class="minus">-</button>
+                        <input class="product_box" id="product" name="product" type="text" required />
+                        <input class="quantity_per_day_box" id="quantity_per_day" name="quantity_per_day" type="text" required />
+                        <select class="frequency_use_box" id="frequency_use" name="frequency_use">
+                            <option value=""></option>
+                                <option value="1">Seldom</option>
+                                <option value="2">Sometimes</option>
+                                <option value="3">Often</option>
+                                <option value="4">Always</option>
+                        </select>
+                        <input class="date_last_used_box" id="date_last_used" name="date_last_used" type="date" required />
+                    </fieldset>
+
+                </div>
+                <!--FILL-UP ENDING-->
+
+            </div>
+
+            <!--RIGHT-CONTAINER ENDING-->
+        </div>
+
+        <!--MAIN END-->
+
+    <script src="sunlife.js"></script>
+
+    </body>
+    
+</html>
