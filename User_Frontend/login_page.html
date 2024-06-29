@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunlife Insurance First Page</title>
+    <link rel="stylesheet" href="frontpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/sunlife-tab.png">
+
+</head>
+
+<body>
+
+    <!--loginpage parts-->
+    <div class="yellowrectangle-container">
+        <img class="yellowrectangle" src="images/Rectangle 1.png" >
+    </div>
+
+    <div class="glass-container" >
+        <img class="glass" src="images/glassy card.png">
+    </div>
+
+    <div class="logo"> 
+         <img class="sunlifelogo" src="images/screenshot_20240526150513_removebg_preview_1.png">
+    </div>
+    
+    
+
+
+      <!--login text parts (yellow recatngle )-->
+
+      <div class="yellowtext">
+        <p class="welcome"><b>Welcome Back!</b></p>
+        <p class="quotes">When you seek the brighter side of things you will not only find it but you will become it </p>
+      </div>
+
+
+      <!--Field text for password and Username-->
+      <div class="generalemailpass">
+
+      <div class="email">
+        <p class="username"> USERNAME/EMAIL </p>
+        <img class="message" src="images/Vector.png">
+         <input class="email1" type="textbox" >
+      </div>
+    
+    
+    <div class="pass">
+        <div class="password-wrapper">
+        <p class="passtext"> PASSWORD</p>
+        <img class="lock" src="images/Vector 1.png">
+        <input class="password" type="password" id="password">
+        <img class="eye" src="images/Vector2.png" id="eyeicon">
+        </div>
+    </div>
+
+    <!--Password script/backend-->
+    
+    <script>
+        let eyeicon = document.getElementById("eyeicon");
+        let password = document.getElementById("password");
+        
+        eyeicon.onclick = function() {
+            if (password.type === "password") {
+                password.type = "text";
+                eyeicon.src = "images/Mask group.png";
+            } else {
+                password.type = "password";
+                eyeicon.src="images/Vector2.png";
+            }
+        }
+    </script>
+
+      <!--Login button-->
+    <div class="button1">
+        <a href="policyowner.html">
+    <button class="login">Login</button>
+        </a>
+    </div> 
+    
+      <!--forgot password-->
+    <div class="iforgot">
+        <p class="forgot"> <b><u>Forgot Password? </u></b></p>
+    </div>
+
+    </div>
+
+    <!--agreement-->
+
+
+    <div class="agreement">
+        <p class="bylog">
+            By logging in, you agree that Sun Life Philippines shall process your personal 
+            data to fulfill the transaction or request that you will make. 
+            Sun Life Philippines may disclose your personal data to its affiliates, service providers, and 
+            ther third parties for processing consistent with the transaction or request made, and to comply with legal obligations, 
+            as well as laws and regulations, both domestic and foreign. Your rights include the right to be informed, the right to access your data, 
+            and the right to correct errors in your data. For more information about your rights and how we protect your data, please view our <b><u> Privacy Policy.  </u> </b>
+            Questions? Please get in touch with our <b><u>Data Protection Officer. </u> </b>
+        </p>
+    </div>
+ 
+</body>  
+
+
+</html>

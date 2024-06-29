@@ -1,0 +1,200 @@
+body {
+    background-image: url('frontimages/image 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FRONT BOXES, YELLOW AND GLASS RECTANGLES*/
+
+.yellowrectangle {
+  height: 725px;
+  width: 600px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.sunlifelogo {
+    height: 70px;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 900px;
+}
+
+.glass-container {
+    display: inline-block;
+    position: absolute;
+    TOP: 20px;
+    left: 700px;
+}
+
+.glass {
+    height: 700px;
+    width: 700px;
+}
+
+/* FRONT TEXT, YELLOW RECTANGLE*/
+
+.yellowtext {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+
+.welcome{
+    font-size: 52px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: #003955;
+    font-weight: bold;
+   
+    
+}
+
+.quotes {
+    margin-top: 20px;
+    padding-top: 0px;
+    font-size: 32px;
+    line-height: 40px;
+    width: 480px;
+    text-align: center;
+    color: #003955;
+    font-style: normal;
+    line-height: 45px;
+    
+}
+
+
+/* Email and Password*/
+
+.username, .passtext {
+    font-size: 16px;
+    color: #828C95;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family:  Helvetica
+    
+}
+
+.email1, .password {
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: text;
+    border: none;
+    color: black;
+    font-size: 20px;
+    border-color: white;
+    padding-right: 10px;
+    text-indent: 60px;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    margin-top: 0px;
+}
+
+.message, .lock {
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.generalemailpass {
+    top: 160px;
+    left: 800px;
+    display: inline-block;
+    position: absolute;
+}
+
+.eye {
+    display: inline-block;
+    position: absolute;
+    left: 455px;
+    top: 150px;
+    cursor: pointer;
+}
+
+
+/*button login*/
+
+.login {
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border: none;
+    background-color: #EAAB00;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.button1 {
+    top: 230px;
+    left: 180px;
+    position: absolute;
+}
+
+.login:active {
+    color: #4F709C;
+    
+}
+
+.button1:hover {
+   opacity:50%;
+}
+
+/*forgot password*/
+
+.forgot {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iforgot {
+    margin-top: 100px;
+    margin-left: 170px;
+}
+
+.forgot:hover {
+    color: black;
+}
+
+.forgot:active {
+    opacity:50%;
+}
+
+/*agreement*/
+
+.agreement {
+    display: block;
+    position: absolute;
+    top: 500px;
+    left: 760px;
+     
+}
+
+.bylog {
+    color: #4F3F12;
+    font-size: 16px;
+    width: 580px;
+    cursor: pointer;;
+}

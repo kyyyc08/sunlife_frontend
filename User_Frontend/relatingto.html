@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Relating to Form</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="relatingtome.css"> 
+        <link rel="icon" href="images/sunlife-tab.png">
+    </head>
+    <body>
+
+        <!--HEADER PART-->
+        <div class="header-container">
+            <img class="yellow-line" src="images/yellow line.png">
+            <img class="logo" src="images/sunlife logo.png">
+        </div>
+
+        <!--MAIN PART-->
+        <div class="main-container">
+
+            <!--SIDEBAR PART-->
+            <div class="side-bar">
+                <p class="side-bar-text">Full Name </p>
+                <p class="side-bar-text">Religion</p>
+                <p class="side-bar-text">Sex</p>
+                <p class="side-bar-text">Birthdate</p>
+                <p class="side-bar-text">Age</p>
+                <p class="side-bar-text">Birthplace</p>
+                <p class="side-bar-text">Citizenship</p>
+                <p class="side-bar-text">Country of Legal Residence...</p>
+                <p class="side-bar-text">ID Presented </p>
+                <p class="side-bar-text">ID Number </p>
+                <p class="side-bar-text">ID Expiry Date</p>
+                <p class="side-bar-text">TIN</p>
+                <p class="side-bar-text">SSS No. or GSIS No.</p>
+                <p class="side-bar-text">Explain if there is no TIN...</p>
+                <p class="side-bar-text">Permanent Residence Add...</p>
+                <p class="side-bar-text">Present Residence Address</p>
+                <p class="side-bar-text">Business Address </p>
+                <p class="side-bar-text">Home Phone</p>
+                <p class="side-bar-text">Work Phone</p>
+                <p class="side-bar-text">Mobile Phone</p>
+                <p class="side-bar-text">Email Address</p>
+                <p class="side-bar-text">If residence is outside the...</p>
+                <p class="side-bar-text">Intention to reside outside...</p>
+                <p class="side-bar-text">Occupation</p>
+                <p class="side-bar-text">Have you change your occupation...</p>
+                <p class="side-bar-text">If yes, since when?</p>
+
+    
+            </div>
+
+            <!--MAIN FILLUP FORM-->
+            <div class="right-container">
+                <!--TITLE FORM-->
+                <p class="title">DECLARATION FORM</p>
+
+                <!--PROGRESS BAR START-->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="step-container">
+                            <div class="step">
+                                <p class="text-container">policy owner information</p>
+                            </div>
+                            <div class="step">
+                                <p class="text-container">Relating to the Life Insured/ Policy Owner information</p>
+                            </div>
+                            <div class="step">
+                                <p class="text-container">Relating to Business Policy Owner information</p>
+                            </div>
+                            <div class="step">
+                                <p class="text-container">Life Insured/ Policy Owner Medical information</p>
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="bullet-container">
+                                <div class="bullet"><span>1</span></div>
+                                <div class="bullet"><span>2</span></div>
+                                <div class="bullet"><span>3</span></div>
+                                <div class="bullet"><span>4</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROGRESS BAR ENDING-->
+    
+
+                <div class="divide-line"></div>
+
+                <!--FILL-UP PART-->
+                <p class="sub-title">RELATING TO THE LIFE INSURED / POLICY OWNER</p>
+
+                <div class="fill-up-container">
+                    <!-- Grouping each textbox by row -->
+                    <fieldset class="row1">
+                        <div class="form-group">
+                            <label class="category-title" for="policy_owner_name">Full Name <small class="smallname">(First Name, Middle Initial, Last Name)</small> </label>
+                            <input class="policy_owner_name_box" id="policy_owner_name" name="policy_owner_name" type="text" required />
+                        </div>
+
+                        <!--religion textfield-->
+
+                        <div class="religion-group">
+                            <label class="category-title" for="religion">Religion </label>
+                            <input class="religion_box" id="religion" name="religion" type="text" required />
+                        </div>
+                
+                        <!--Checkbox of sex-->
+                        <div class="sexcheckbox">
+                            <label class="sex">Sex</label>
+                            
+                            <div class="checkbox-row">
+                                <input class="cbox1" type="checkbox" id="maleCheckbox" name="malesex" value="sex">  Male
+                                <input class="cbox2" type="checkbox" id="femaleCheckbox" name="femalesex" value="sex"> Female
+                
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <!--script for sex-->
+                    <script>
+
+                      
+            const maleCheckbox = document.getElementById('maleCheckbox');
+            const femaleCheckbox = document.getElementById('femaleCheckbox');
+
+
+            maleCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+            femaleCheckbox.checked = false; // Uncheck female if male is checked
+                 }
+                    });
+
+          femaleCheckbox.addEventListener('change', function() {
+         if (this.checked) {
+        maleCheckbox.checked = false; // Uncheck male if female is checked
+             }
+            });
+                        
+
+                    </script>
+
+                 
+                    
+
+                  
+                    <!--for row 2 birthdate, age, birthplace-->
+                    <fieldset class="row2">
+                        <div class="form-group">
+                            <label class="category-title" for="birthdate">Birthdate </label>
+                            <input class="birthdate" id="birthdate" name="birthdate" type="date" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="age">Age </label>
+                            <input class="age" id="age" name="age" type="number" min="16" max="120" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="category-title" for="birthplace">Birthplace </label>
+                            <input class="birthplace" id="birthplace" name="birthplace" type="text" required />
+                        </div>  
+
+                        </fieldset>
+
+                        <!--for row 3 citizenship, country of legal-->
+
+                        <fieldset class="row3">
+                            <div class="form-group">
+                                <label class="category-title" for="citizenship">Citizenship </label>
+                                <input class="citizenship" id="citizenship" name="citizenship" type="text" required /> 
+                            </div>
+                            
+    
+                            <div class="form-group">
+                                <label class="category-title" for="country">Country of Legal Residence other than Philippines</label>
+                                <input class="country" id="country" name="country" type="text" required />
+                            </div>
+                    </fieldset>
+
+                    <!--for row 4 id presented, id number, id expiry-->
+                    <fieldset class="row4">
+                        <div class="form-group">
+                            <label class="category-title" for="idpresented">ID Presented</label>
+                            <input class="idpresented" id="idpresented" name="idpresented" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="idnumber">ID Number</label>
+                            <input class="idnumber" id="idnumber" name="idnumber" type="text" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="category-title" for="expiry">ID Expiry Date</label>
+                            <input class="idexp" id="idexp" name="idexp" type="date" required />
+                        </div> 
+
+                        </fieldset>
+
+                    <!--for row 5 tin, sss, explanation-->
+                    <fieldset class="row5">
+                        <div class="form-group">
+                            <label class="category-title" for="tin">TIN</label>
+                            <input class="tin" id="tin" name="tin" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="SSS">SSS No. or GSIS No.</label>
+                            <input class="SSS" id="SSS" name="SSS" type="text" required />
+                        </div>
+
+                        </fieldset>
+
+                         <!--for row 6 -->
+                        <fieldset class="row6">
+                        <div class="form-group">
+                            <label class="category-title" for="explain">Explain if there is no TIN, SSS or GSIS No.</label>
+                            <input class="explain" id="explain" name="explain" type="text" required /> 
+                        </div>                    
+                
+                        </fieldset>
+
+                          <!--for row 7 permanent-->
+                          <fieldset class="row7">
+                            <div class="form-group">
+                                <label class="category-title" for="permanent">Permanent Residence Address <small class="smallname"> (no., street, municipality/city, province, country, zip code)</small></label>
+                                <input class="permanent" id="permanent1" name="permanent" type="text" required /> 
+                            </div>                    
+                    
+                            </fieldset>
+
+                             <!--for row 8 present-->
+                          <fieldset class="row8">
+                            <div class="form-group">
+                                <label class="category-title" for="present">Present Residence Address <small class="smallname"> (no., street, municipality/city, province, country, zip code)</small></label>
+                                <input class="present " id="present1" name="present" type="text" required /> 
+                                
+                               <field> 
+                                <div class="present-row">
+                                    <input class="presentcbox" type="checkbox" id="same1" name="same" value="same">  same with Permanent Address 
+                            </div>    
+                        </field>      
+                        
+                            </fieldset> 
+
+                              <!--script of inheriting permanent-->
+                              <script>
+                                
+                            
+                                const permInput = document.getElementById('permanent1');
+                                const sameCheckbox = document.getElementById('same1');
+                                const presInput = document.getElementById('present1');
+                        
+                                // functions to copy
+                                function copyPermanentAddress() {
+                                    if (sameCheckbox.checked) {
+                                        presInput.value = permInput.value;
+                                    } else {
+                                        presInput.value = ''; 
+                                    }
+                                }
+                        
+                                // Event listener for checkbox click
+                                sameCheckbox.addEventListener('change', copyPermanentAddress);
+                            </script>
+                        
+
+                             <!--for row 9 business-->
+                          <fieldset class="row9">
+                            <div class="form-group">
+                                <label class="category-title" for="permanent">Business Address <small class="smallname"> (building, street, municipality/city, province, country, zip code)</small></label>
+                                <input class="business" id="business" name="business" type="text" required /> 
+                            </div>
+                            
+                          </fieldset>
+
+                            <!--for row 10 homephone, workphone, mobilephone-->
+                    <fieldset class="row10">
+                        <div class="form-group">
+                            <label class="category-title" for="homephone">Home Phone</label>
+                            <input class="homephone" id="homephone" name="homephone" type="text" required /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="category-title" for="workphone">Work Phone</label>
+                            <input class="workphone" id="workphone" name="workphone" type="text" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="category-title" for="mobilephone">Mobile Phone</label>
+                            <input class="mobilephone" id="mobilephone" name="mobilephone" type="text" required />
+                        </div> 
+
+                        </fieldset>
+
+                            <!--for row 11 email add-->
+                            <fieldset class="row11">
+                                <div class="form-group">
+                                    <label class="category-title" for="email">Email Address</label>
+                                    <input class="email" id="email" name="email" type="text" required /> 
+                                </div>                    
+                        
+                                </fieldset>
+                                
+                                 <!--for row 12 if there add-->
+                                <fieldset class="row12">
+                                    <div class="form-group">
+                                        <label class="category-title" for="ifres">If residence address is outside the Philippines since when? </label>
+                                        <input class="sincewhen" id="ifres" name="ifres" type="text" required />
+                                    </div>
+
+                                    <!--checkbox of intention to reside-->
+
+                                    <div class="intentioncheckbox">
+                                        <label class="intentionto">Intention to reside outside the Philippines?</label>
+                                        
+                                        <div class="intentioncheckbox-row">
+                                            <input class="intentioncbox1" type="checkbox" id="intentionyes" name="intentionyes" value="yes">  Yes
+                                            <input class="intentioncbox2" type="checkbox" id="intentionno" name="intentionno" value="no"> No
+                            
+                                        </div>
+                                    </div>
+            
+                                </fieldset>
+
+                                <script>
+
+                        const intentionyes = document.getElementById('intentionyes');
+                        const intentionno = document.getElementById('intentionno');
+            
+      
+                        intentionyes.addEventListener('change', function() {
+                        if (this.checked) {
+                        intentionno.checked = false; // Uncheck female if male is checked
+                             }
+                                });
+            
+                      intentionno.addEventListener('change', function() {
+                     if (this.checked) {
+                    intentionyes.checked = false; // Uncheck male if female is checked
+                         }
+                        });
+                                    
+            
+                                </script>
+
+                                 <!--for row 13 occupation and have you checkbox -->
+                                 <fieldset class="row13">
+                                    <div class="form-group">
+                                        <label class="category-title" for="sincewhen">Occupation <small class="smallname">(please indicate spesific job)</small> </label>
+                                        <input class="sincewhen" id="sincewhen" name="sincewhen" type="text" required />
+                                    </div>
+
+                                    <div class="havecheckbox">
+                                        <label class="haveyou">Have you changed your occupation since the date of application for the policy?</label>
+                                        
+                                        <div class="havecheckbox-row">
+                                            <input class="havecbox1" type="checkbox" id="haveyouyes" name="haveno" value="haveno">  Yes
+                                            <input class="havecbox2" type="checkbox" id="haveyouno" name="haveyes" value="haveyes"> No
+                            
+                                        </div>
+                                    </div>
+
+            
+
+                                </fieldset>
+
+                                <!--script of have you-->
+                                <script>
+
+                                   
+                        const haveyouyes = document.getElementById('haveyouyes');
+                        const haveyono = document.getElementById('haveyouno');
+            
+            
+                        haveyouyes.addEventListener('change', function() {
+                        if (this.checked) {
+                        haveyouno.checked = false; // Uncheck female if male is checked
+                             }
+                                });
+            
+                      haveyouno.addEventListener('change', function() {
+                     if (this.checked) {
+                    haveyouyes.checked = false; // Uncheck male if female is checked
+                         }
+                        });
+                                    
+            
+                                </script>
+
+                                <fieldset class="row13">
+
+                                    <div class="ifyesbox">
+                                        <label class="category-title" for="ifyes">If yes, since when?</label>
+                                        <input class="ifyes" id= "ifyes" name="ifyes" type="date" required />
+                                    </div> 
+
+                                   
+
+            
+                                </fieldset>
+
+
+                    
+
+                </div>
+                <!--FILL-UP ENDING-->
+
+                <!--BUTTONS-->
+                <div class="button-container">
+                    <a href="policyowner.html">
+                        <button class="button-back">BACK</button>
+                    </a>
+                    
+                    <a href="thirdprogress.html">
+                    <button class="button-next">NEXT</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--RIGHT-CONTAINER ENDING-->
+        </div>
+        <!--MAIN END-->
+    </body>
+    <footer>
+        <!--FOOTER PART-->
+        <div class="footer-container">
+            <div class="footer-left">
+                <p class="brighter">Life's brighter under the sun</p>
+                <p class="brighter2">© 2021 Sun Life Assurance Company of Canada.
+                    All rights reserved.
+                </p>
+            </div>
+            <div class="footer-right">
+                <p class="legal">Legal &nbsp;    |  &nbsp; Privacy  &nbsp; |  &nbsp; Security  &nbsp; Site map &nbsp; Feedback </p>
+                <p class="legal2">2/F Sun Life Centre, 5th Avenue corner Rizal
+                    Drive, Bonifacio Global City, Taguig City 1634
+                </p>
+            </div>
+        </div>
+        <!--FOOTER END-->
+    </footer>
+</html>
