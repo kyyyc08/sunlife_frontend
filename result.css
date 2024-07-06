@@ -1,0 +1,403 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+.header-container { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.yellow-line {
+    display: block;
+    width: auto;
+}
+
+.logo {
+    display: block;
+    padding-left: 30px;
+    width: 180px;
+    height: 60px;
+}
+
+.main-container {
+    display: flex;
+}   
+
+.side-bar {
+    width: 288px;
+    height: 920px;     /*can edit: pahabain*/
+    background-color: #EEBA2E;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/*MAIN PART--right container*/
+
+.dashlogo {
+    
+    height: 35px;
+    position: absolute;
+    margin: 25px 0px 00px 50px;
+}
+
+.dash {
+    display: flex;
+}
+
+.dashrectangle {
+    position: absolute;
+    height: 80px;
+    width: 81%;
+   
+}
+  
+.right-container {
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: 0px;
+   
+}
+
+.title {
+    color: #EAAB00;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px 0px 0px 90px;
+    position: absolute;
+}
+
+
+/* yellow bar admin*/
+
+.admintext {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.admin {
+    position: relative;
+    display: flex;
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.adminimage {
+    height: 70px;
+    width: 70px;
+}
+
+.button1, .button2 {
+    border-radius: 5px;
+    border-style: solid;
+    border: none;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 10px; backdrop-filter: blur(40px);
+    color: #184A58;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    width: 250px;
+    font-weight: bold;
+    background-image: linear-gradient( #FCF8F3, #fece4a);
+    
+}
+
+.button1:hover, .button2:hover {
+    opacity: 80%;
+}
+
+.button1:active, .button2:active {
+    color: white;
+}
+
+.buttondr {
+    margin-left: 15px;
+}
+
+
+/* dashboardv center glass*/
+
+.glass {
+    height: 600px;
+    width: 1140px;
+}
+
+.centerglass {
+    margin-top: 300px;
+    margin-left: 50px;
+    position: relative;
+    overflow-y: auto;
+    display: inline;
+
+
+}
+
+
+/* searchbar */
+.searchbar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 450px;
+}
+
+.search {
+    width: 800px;
+    height: 40px;
+    padding-left: 40px; 
+    background-color: none;
+    border: none;
+    text-indent: 10px;
+    padding-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.searchbutton {
+    height: 40px;
+    min-width: 100px; 
+    background-color: #EAAB00;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+}
+
+.fa-solid.fa-magnifying-glass {
+    position: absolute;
+    margin-left: 20px; 
+    color: #666; 
+    font-size: 20px; 
+}
+
+
+
+
+.searchbutton {
+    height: 40px;
+    width: 100px;
+    background-color: #EAAB00;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    margin-left: 10px;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 10px; backdrop-filter: blur(40px);
+    
+}
+
+.searchbutton:hover, .addrecord:hover{
+    opacity: 80%;
+}
+
+.searchbutton:active, .addrecord:active {
+    color: black;
+}
+
+/*declaration information*/
+
+.addrecord {
+    height: 28px;
+    width: 100px;
+    background-color: #EAAB00;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    margin-left: 10px;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px; backdrop-filter: blur(40px);
+    margin-left: 450px;
+}
+
+.dectitle {
+    color: #003955;
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.policyinfo {
+    color: #003955;
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 80px;
+    margin-bottom: 10px;
+
+  
+}
+
+.thistable {
+    color: #003955;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tablerecord {
+    display: flex;
+    margin-left: 50px;
+
+    
+}
+
+.declaration {
+    position: absolute;
+    top: 380px;
+    left: 370px;
+}
+
+.grayrec{
+    width:1050px;
+    height: 70px;
+}
+
+/* delete and download csv files settings*/
+.deletebutton {
+    color: white;
+    background-color: #DD3333;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px; backdrop-filter: blur(40px);
+    border: none;
+    height: 35px;
+    width: 80px;
+}
+.dlbutton {
+    color: white;
+    background-color: #0E2942;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px; backdrop-filter: blur(40px);
+    border: none;
+    height: 35px;
+    width: 180px;
+}
+
+
+.deletebutton:hover, .dlbutton:hover, .categorybutton:hover, .categorybutton2:hover, .activecategorybutton {
+    opacity: 80%;
+}
+
+.deletebutton:active, .dlbutton:active, .categorybutton:active, .categorybutton2:active {
+   color:black;
+}
+
+
+.tablerecord1 {
+    display: flex;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 1200px;
+}
+
+.tablerecord2 {
+    display: flex;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 350px;
+}
+
+/*checkbox settings*/
+
+
+.cbox1{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px; backdrop-filter: blur(40px);
+    position: absolute;
+}
+
+
+/* category buttons settings */
+
+.categorybutton {
+    width: 200px;
+    color: white;
+    background-color: #EAAB00;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px; backdrop-filter: blur(40px);
+    height: 40px;
+    border: none;
+    margin-left: 50px;
+    font-size: 15px;
+
+}
+
+
+.categorybutton2 {
+    width: 250px;
+    color: white;
+    background-color: #EAAB00;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px; backdrop-filter: blur(40px);
+    height: 40px;
+    border: none;
+    margin-left: 50px;
+    font-size: 15px;
+
+}
+
+.activecategorybutton {
+    width: 250px;
+    color: white;
+    background-color: #c08d00;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px; backdrop-filter: blur(40px);
+    height: 40px;
+    border: none;
+    margin-left: 50px;
+    font-size: 15px;
+
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+/*gray rectangles for tables settings*/
+
+
+.adminrec {
+    margin-left: 10px;
+    overflow-y: auto;
+}
+
+.adminrec1 {
+    margin-left: 10px;
+    margin-top: 70px;
+    
+}
+
+.rectangles {
+    position: relative;
+}
